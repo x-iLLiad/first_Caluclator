@@ -1,0 +1,52 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	//CALCULATOR EXERCISE
+
+	double num1, num2;
+	char op;
+
+	cout << "Input first number" << endl;
+	cin >> num1;
+
+	cout << "Input operation to be done with second number" << endl;
+	cin >> op;
+
+	cout << "Input second number" << endl;
+	cin >> num2;
+
+	std::cout << "The answer was:";
+	system("cls");
+	switch (op) {
+	case 42:
+		//Multiplication
+		std::cout << (num1*num2)<<endl;
+		break;
+
+	case 47:
+		std::cout << (num1 / num2) << endl;
+		//DIVISION
+		break;
+
+	case 43:
+		//ADDITION
+		std::cout << (num1 + num2) << endl;
+		break;
+
+	case 45:
+		//SUBTRACTION
+		std::cout << (num1 - num2) << endl;
+
+		break;
+
+	
+	default:
+		cout << " You typed a wrong character" << endl;
+
+	}
+
+	
+
+}
